@@ -1,0 +1,41 @@
+{
+  "name": "tunneler-server",
+  "version": "1.0.0",
+  "description": "Expose your Local to Internet",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/index.ts",
+    "build": "tsc",
+    "prod": "node dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "format": "eslint . --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "ioredis-mock": "^8.9.0",
+    "random-words": "^2.0.1",
+    "socket.io": "^4.7.5",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^1.7.0",
+    "@types/compression": "^1.7.5",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  }
+}
